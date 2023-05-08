@@ -43,6 +43,9 @@
         outline: none;
         margin-bottom: 10px;
       }
+      input::placeholder {
+        color: #999;
+      }
       input:focus::placeholder {
         color: transparent;
       }
@@ -55,7 +58,8 @@
         font-size: 1.2rem;
         cursor: pointer;
         margin: 0 10px;
-        transition: all 0.3s ease;
+        min-width: 100px;
+        transition: all 0.2s ease;
       }
       .button:hover {
         background-color: #0062cc;
