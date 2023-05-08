@@ -80,7 +80,7 @@
       <p id="hint"></p>
       <input type="text" id="answer" placeholder="Skriv svaret her" />
       <div>
-        <button class="button" id="dont-know">Vet ikke</button>
+        <button class="button" id="dont-know">Vis</button>
         <span class="spacing"></span>
         <button class="button" id="next" disabled>Neste</button>
       </div>
@@ -90,7 +90,7 @@
       const data = [
         { ord: "akseptere", preteritum: "aksepterte", perfektum: "har akseptert" },
         { ord: "aktivere", preteritum: "aktiverte", perfektum: "har aktivert" },
-        { ord: "anklage", preteritum: "anklagde", perfektum: "har anklagd" },
+        { ord: "anklage", preteritum: "anklaget", perfektum: "har anklaget" },
         { ord: "arbeide", preteritum: "arbeidet", perfektum: "har arbeidet" },
         { ord: "avslutte", preteritum: "avsluttet", perfektum: "har avsluttet" },
         { ord: "bade", preteritum: "badet", perfektum: "har badet" },
@@ -98,7 +98,7 @@
         { ord: "begrave", preteritum: "begravde", perfektum: "har begravd" },
         { ord: "begynne", preteritum: "begynte", perfektum: "har begynt" },
         { ord: "behøve", preteritum: "behøvde", perfektum: "har behøvd" },
-        { ord: "beklage", preteritum: "beklagde", perfektum: "har beklagd" },
+        { ord: "beklage", preteritum: "beklaget", perfektum: "har beklaget" },
         { ord: "bekymre", preteritum: "bekymret", perfektum: "har bekymret" },
         { ord: "benytte", preteritum: "benyttet", perfektum: "har benyttet" },
         { ord: "bestemme", preteritum: "bestemte", perfektum: "har bestemt" },
@@ -106,7 +106,7 @@
         { ord: "betale", preteritum: "betalte", perfektum: "har betalt" },
         { ord: "bety", preteritum: "betydde", perfektum: "har betydd" },
         { ord: "bety", preteritum: "betydde", perfektum: "har betydd" },
-        { ord: "bevege", preteritum: "bevegde", perfektum: "har bevegd" },
+        { ord: "bevege", preteritum: "beveget", perfektum: "har beveget" },
         { ord: "blande", preteritum: "blandet", perfektum: "har blandet" },
         { ord: "bli", preteritum: "ble", perfektum: "har blitt" },
         { ord: "bo", preteritum: "bodde", perfektum: "har bodd" },
@@ -134,12 +134,11 @@
         { ord: "flytte", preteritum: "flyttet", perfektum: "har flyttet" },
         { ord: "fokusere", preteritum: "fokuserte", perfektum: "har fokusert" },
         { ord: "forandre", preteritum: "forandret", perfektum: "har forandret" },
-        { ord: "forlate", preteritum: "forlot", perfektum: "har forlatt" },
         { ord: "forberede", preteritum: "forberedte", perfektum: "har forberedt" },
         { ord: "fordøye", preteritum: "fordøyde", perfektum: "har fordøyd" },
         { ord: "forelske", preteritum: "forelsket", perfektum: "har forelsket" },
-        { ord: "foretrekke", preteritum: "foretrakk", perfektum: "har foretrukket" },
         { ord: "forklare", preteritum: "forklarte", perfektum: "har forklart" },
+        { ord: "forlate", preteritum: "forlot", perfektum: "har forlatt" },
         { ord: "forstyrre", preteritum: "forstyrret", perfektum: "har forstyrret" },
         { ord: "forstå", preteritum: "forstod", perfektum: "har forstått" },
         { ord: "fortelle", preteritum: "fortalte", perfektum: "har fortalt" },
@@ -184,7 +183,7 @@
         { ord: "kjenne", preteritum: "kjente", perfektum: "har kjent" },
         { ord: "kjøpe", preteritum: "kjøpte", perfektum: "har kjøpt" },
         { ord: "kjøre", preteritum: "kjørte", perfektum: "har kjørt" },
-        { ord: "klage", preteritum: "klagde", perfektum: "har klagd" },
+        { ord: "klage", preteritum: "klaget", perfektum: "har klaget" },
         { ord: "klappe", preteritum: "klappet", perfektum: "har klappet" },
         { ord: "klare", preteritum: "klara", perfektum: "har klara" },
         { ord: "klemme", preteritum: "klemte", perfektum: "har klemt" },
@@ -199,7 +198,6 @@
         { ord: "krangle", preteritum: "kranglet", perfektum: "har kranglet" },
         { ord: "kreve", preteritum: "krevde", perfektum: "har krevd" },
         { ord: "kvalifisere", preteritum: "kvalifiserte", perfektum: "har kvalifisert" },
-        { ord: "lage", preteritum: "lagde", perfektum: "har lagd" },
         { ord: "lage", preteritum: "laget", perfektum: "har laget" },
         { ord: "lagre", preteritum: "lagret", perfektum: "har lagret" },
         { ord: "legge", preteritum: "la", perfektum: "har lagt" },
@@ -215,8 +213,8 @@
         { ord: "likne", preteritum: "liknet", perfektum: "har liknet" },
         { ord: "lukte", preteritum: "luktet", perfektum: "har luktet" },
         { ord: "lure", preteritum: "lurte", perfektum: "har lurt" },
-        { ord: "lyve", preteritum: "løy", perfektum: "har løyet" },
         { ord: "lytte", preteritum: "lyttet", perfektum: "har lyttet" },
+        { ord: "lyve", preteritum: "løy", perfektum: "har løyet" },
         { ord: "låne", preteritum: "lånte", perfektum: "har lånt" },
         { ord: "lære", preteritum: "lærte", perfektum: "har lært" },
         { ord: "løpe", preteritum: "løp", perfektum: "har løpt" },
@@ -297,7 +295,7 @@
         { ord: "stille", preteritum: "stillet", perfektum: "har stillet" },
         { ord: "stoppe", preteritum: "stoppet", perfektum: "har stoppet" },
         { ord: "stå", preteritum: "sto", perfektum: "har stått" },
-        { ord: "støvsuge", preteritum: "støvsugde", perfektum: "har støvsugd" },
+        { ord: "støvsuge", preteritum: "støvsugte", perfektum: "har støvsuget" },
         { ord: "surfe", preteritum: "surfet", perfektum: "har surfet" },
         { ord: "svare", preteritum: "svarte", perfektum: "har svart" },
         { ord: "svømme", preteritum: "svømte", perfektum: "har svømt" },
@@ -312,8 +310,10 @@
         { ord: "tenne", preteritum: "tente", perfektum: "har tent" },
         { ord: "tilberede", preteritum: "tilberedte", perfektum: "har tilberedt" },
         { ord: "tilpasse", preteritum: "tilpasset", perfektum: "har tilpasset" },
+        { ord: "tillate", preteritum: "tillot", perfektum: "har tillat" },
         { ord: "tjene", preteritum: "tjente", perfektum: "har tjent" },
         { ord: "treffe", preteritum: "traff", perfektum: "har truffet" },
+        { ord: "trekke", preteritum: "trakk", perfektum: "har trukket" },
         { ord: "trene", preteritum: "trenet", perfektum: "har trenet" },
         { ord: "trenge", preteritum: "trengte", perfektum: "har trengt" },
         { ord: "trives", preteritum: "trivdes", perfektum: "har trivdes" },
