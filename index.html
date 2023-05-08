@@ -369,7 +369,7 @@
         nextButton.disabled = true;
         const progressText = `${currentCardIndex + 1}/${data.length}`;
         progressElement.textContent = progressText;
-        answerElement.value = "";
+        answerElement.value = isPreteritum ? "" : "har ";
         answerElement.focus();
       }
 
